@@ -9,7 +9,9 @@ all: build docker-images.png
 clean:
 	rm -f */image docker-images.png
 
-build: bwa/image
+build: \
+	bwa/image \
+	maker/image
 
 install-deps:
 	brew install docker graphviz
