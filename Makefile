@@ -1,8 +1,11 @@
-# Build Linuxbrew Homebrew-science Docker images
+# Build Homebrew-science Docker images using Linuxbrew
 # Written by Shaun Jackman
 
 # The Docker Hub repository
-r=sjackman/bio
+u=sjackman
+
+# The tag
+t=develop
 
 all: build docker-images.png
 
@@ -21,8 +24,8 @@ install-deps:
 .SECONDARY:
 
 %/image: %/Dockerfile
-	docker build -t $r:$* $*
-	docker images --no-trunc |awk '$$2=="$*" {print $$3}' >$@
+	docker build -t $u/$*:$t $*
+	docker images --no-trunc |awk '$$1 ":" $$2 =="$u/$*:$t" {print $$3}' >$@
 
 docker-images.png:
 	docker images --viz |dot -Tpng -o docker-images.png
