@@ -2,18 +2,18 @@ Docker Images of [Linuxbrew][] [Homebrew-science][] Bioinformatics Software
 ================================================================================
 
 ## [BWA][]
-docker pull [sjackman/bio:bwa][]
+docker pull [sjackman/bwa][]
 
 ## [MAKER][]
-docker pull [sjackman/bio:maker][]
+docker pull [sjackman/maker][]
 
 [Homebrew-science]: https://github.com/Homebrew/homebrew-science
 [Linuxbrew]: http://brew.sh/linuxbrew/
 
 [BWA]: http://bio-bwa.sourceforge.net/
 [MAKER]: http://www.yandell-lab.org/software/maker.html
-[sjackman/bio:bwa]: bwa/Dockerfile
-[sjackman/bio:maker]: maker/Dockerfile
+[sjackman/bwa]: bwa/Dockerfile
+[sjackman/maker]: maker/Dockerfile
 
 Docker Images
 ================================================================================
