@@ -8,5 +8,5 @@ From [Homebrew-science][] and built using [Linuxbrew][]
 [Homebrew-science]: https://github.com/Homebrew/homebrew-science
 [Linuxbrew]: http://brew.sh/linuxbrew/
 
-[samtools]: http://samtools.sourceforge.net/
+[samtools]: http://www.htslib.org/
 [sjackman/samtools]: https://registry.hub.docker.com/u/sjackman/samtools/
