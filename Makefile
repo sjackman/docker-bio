@@ -14,7 +14,8 @@ clean:
 
 build: \
 	bwa/image \
-	maker/image
+	maker/image \
+	samtools/image
 
 install-deps:
 	brew install docker graphviz

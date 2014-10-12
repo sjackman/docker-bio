@@ -8,5 +8,6 @@ Bioinformatics software from [Homebrew-science][] built using [Linuxbrew][]
 
 > docker pull [sjackman/bwa](bwa/README.md)
 > docker pull [sjackman/maker](maker/README.md)
+> docker pull [sjackman/samtools](samtools/README.md)
 
 ![Docker images](docker-images.png)
