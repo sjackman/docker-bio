@@ -13,6 +13,7 @@ clean:
 	rm -f */image docker-images.png
 
 build: \
+	abyss/image \
 	bwa/image \
 	maker/image \
 	samtools/image
