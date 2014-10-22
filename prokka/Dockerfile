@@ -2,7 +2,7 @@ FROM sjackman/linuxbrew
 MAINTAINER Shaun Jackman <sjackman@gmail.com>
 
 RUN brew install cpanm
-RUN cpanm Bio::Perl
+RUN cpanm Bio::Perl XML::Simple
 ENV PERL5LIB /home/linuxbrew/perl5/lib/perl5
 
 RUN brew tap homebrew/science
