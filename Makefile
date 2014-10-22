@@ -16,6 +16,7 @@ build: \
 	abyss/image \
 	bwa/image \
 	maker/image \
+	prokka/image \
 	samtools/image
 
 install-deps:
