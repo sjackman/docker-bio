@@ -14,6 +14,7 @@ clean:
 
 build: \
 	abyss/image \
+	assemblers/image \
 	bwa/image \
 	maker/image \
 	prokka/image \
