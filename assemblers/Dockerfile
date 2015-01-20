@@ -25,7 +25,7 @@ RUN brew install quast
 RUN brew install sga
 RUN brew install soapdenovo
 RUN brew install spades
-#RUN brew install sparseassembler
-#RUN brew install squeezambler
+RUN brew install sparseassembler
+RUN brew install squeezambler
 RUN brew install velvet
 RUN brew install velvetoptimiser
