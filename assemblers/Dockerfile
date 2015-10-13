@@ -24,7 +24,7 @@ RUN brew install quast
 #RUN brew install rampart # error building r
 RUN brew install sga
 RUN brew install soapdenovo
-RUN brew install spades
+#RUN brew install spades # mysterious failure: make: *** [all] Error 2
 RUN brew install sparseassembler
 RUN brew install squeezambler
 RUN brew install velvet
