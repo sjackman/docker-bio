@@ -25,7 +25,7 @@ RUN brew install quast
 RUN brew install sga
 RUN brew install soapdenovo
 #RUN brew install spades # mysterious failure: make: *** [all] Error 2
-RUN brew install sparseassembler
+#RUN brew install sparseassembler # Error 404 Not Found
 RUN brew install squeezambler
 RUN brew install velvet
 RUN brew install velvetoptimiser
