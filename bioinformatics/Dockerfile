@@ -8,7 +8,7 @@ RUN brew install abyss-explorer
 RUN brew install abyss
 RUN brew install ace-corrector
 #RUN brew install allpaths-lg # g++-4.8: internal compiler error
-RUN brew install amos
+#RUN brew install amos # depends on Statistics::Descriptive
 RUN brew install andi
 RUN brew install art
 RUN brew install artemis
