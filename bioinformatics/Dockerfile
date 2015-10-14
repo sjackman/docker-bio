@@ -1,6 +1,12 @@
 FROM sjackman/linuxbrew
 MAINTAINER Shaun Jackman <sjackman@gmail.com>
 
+# Perl
+RUN brew install cpanm
+RUN cpanm Statistics::Descriptive # for amos
+ENV PERL5LIB /home/linuxbrew/perl5/lib/perl5
+
+# Python
 RUN brew install python # for pip and setuptools
 
 RUN brew tap homebrew/science
@@ -10,7 +16,7 @@ RUN brew install abyss-explorer
 RUN brew install abyss
 RUN brew install ace-corrector
 #RUN brew install allpaths-lg # g++-4.8: internal compiler error
-#RUN brew install amos # depends on Statistics::Descriptive
+RUN brew install amos
 RUN brew install andi
 RUN brew install art
 RUN brew install artemis
