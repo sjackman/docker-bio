@@ -1,6 +1,8 @@
 FROM sjackman/linuxbrew
 MAINTAINER Shaun Jackman <sjackman@gmail.com>
 
+RUN brew install python # for pip and setuptools
+
 RUN brew tap homebrew/science
 RUN brew install a5
 RUN brew install abacas
