@@ -21,7 +21,7 @@ RUN brew install andi
 RUN brew install art
 RUN brew install artemis
 RUN brew install astral
-RUN brew install atram
+#RUN brew install atram # blast failed to build
 RUN brew install augustus
 RUN brew install bam-readcount
 RUN brew install bamhash
@@ -38,7 +38,7 @@ RUN brew install bioawk
 RUN brew install biobloomtools
 RUN brew install biointerchange
 RUN brew install blasr
-RUN brew install blast
+#RUN brew install blast # FAILED: src/algo/blast/unit_tests/api/Makefile.aalookup_unit_test.app
 RUN brew install blat
 RUN brew install bless
 RUN brew install bowtie
