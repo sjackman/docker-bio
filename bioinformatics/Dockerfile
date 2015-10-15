@@ -10,6 +10,10 @@ ENV PERL5LIB /home/linuxbrew/perl5/lib/perl5
 RUN brew install python # for pip and setuptools
 
 RUN brew tap homebrew/science
+
+# atram requires blast. blast fails to build. See https://github.com/Homebrew/homebrew-science/issues/2705
+RUN brew install blast --without-check
+
 RUN brew install a5
 RUN brew install abacas
 RUN brew install abyss-explorer
@@ -21,7 +25,7 @@ RUN brew install andi
 RUN brew install art
 RUN brew install artemis
 RUN brew install astral
-#RUN brew install atram # blast failed to build
+RUN brew install atram
 #RUN brew install augustus # error: boost/iostreams/filtering_stream.hpp: No such file or directory
 RUN brew install bam-readcount
 RUN brew install bamhash
@@ -38,7 +42,7 @@ RUN brew install bioawk
 RUN brew install biobloomtools
 RUN brew install biointerchange
 RUN brew install blasr
-#RUN brew install blast # FAILED: src/algo/blast/unit_tests/api/Makefile.aalookup_unit_test.app
+RUN brew install blast
 
 # Two hour Docker Hub time limit is reached at this point.
 
