@@ -22,7 +22,7 @@ RUN brew install art
 RUN brew install artemis
 RUN brew install astral
 #RUN brew install atram # blast failed to build
-RUN brew install augustus
+#RUN brew install augustus # error: boost/iostreams/filtering_stream.hpp: No such file or directory
 RUN brew install bam-readcount
 RUN brew install bamhash
 RUN brew install bamtools
