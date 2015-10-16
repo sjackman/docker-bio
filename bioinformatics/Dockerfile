@@ -44,7 +44,7 @@ RUN brew install blasr
 
 #RUN brew install blast --without-check # check fails
 #RUN brew install blat
-#RUN brew install bless
+#RUN brew install bless # error: boost/array.hpp: No such file or directory
 #RUN brew install bowtie
 #RUN brew install bowtie2
 #RUN brew install bpipe
