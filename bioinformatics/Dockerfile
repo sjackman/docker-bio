@@ -11,9 +11,6 @@ RUN brew install python # for pip and setuptools
 
 RUN brew tap homebrew/science
 
-# atram requires blast. blast fails to build. See https://github.com/Homebrew/homebrew-science/issues/2705
-RUN brew install blast --without-check
-
 RUN brew install a5
 RUN brew install abacas
 RUN brew install abyss-explorer
@@ -42,10 +39,10 @@ RUN brew install bioawk
 RUN brew install biobloomtools
 RUN brew install biointerchange
 RUN brew install blasr
-RUN brew install blast
 
 # Two hour Docker Hub time limit is reached at this point.
 
+#RUN brew install blast --without-check # check fails
 #RUN brew install blat
 #RUN brew install bless
 #RUN brew install bowtie
