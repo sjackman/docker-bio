@@ -8,6 +8,8 @@ ENV PERL5LIB /home/linuxbrew/perl5/lib/perl5
 
 # Python
 RUN brew install python # for pip and setuptools
+RUN brew install python3
+RUN brew install homebrew/python/numpy # for cerulean
 
 RUN brew tap homebrew/science
 
@@ -51,10 +53,10 @@ RUN brew install blasr
 #RUN brew install bwa
 #RUN brew install cap3
 #RUN brew install cd-hit
-#RUN brew install cegma
+#RUN brew install cegma # Dependency genewise fails to build.
 #RUN brew install celera-assembler
 #RUN brew install cerulean
-#RUN brew install circlator
+#RUN brew install circlator # Dependency homebrew/python/pymummer fails to build.
 #RUN brew install clark
 #RUN brew install clonalframeml
 #RUN brew install clustal-omega
@@ -88,7 +90,7 @@ RUN brew install blasr
 #RUN brew install gaemr
 #RUN brew install garli
 #RUN brew install gatb
-#RUN brew install genewise
+#RUN brew install genewise # error: undefined reference to `g_hash_table_lookup'
 #RUN brew install genometools
 #RUN brew install gfatools
 #RUN brew install gingr
