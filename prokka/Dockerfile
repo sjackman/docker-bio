@@ -1,4 +1,4 @@
-FROM sjackman/linuxbrew
+FROM linuxbrew/linuxbrew
 MAINTAINER Shaun Jackman <sjackman@gmail.com>
 
 RUN brew install cpanm

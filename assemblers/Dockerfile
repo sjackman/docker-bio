@@ -1,4 +1,4 @@
-FROM sjackman/linuxbrew
+FROM linuxbrew/linuxbrew
 MAINTAINER Shaun Jackman <sjackman@gmail.com>
 
 # Fix cmake error: libcurl.so: undefined reference to `SSL_get_peer_certificate@OPENSSL_1.0.0'
