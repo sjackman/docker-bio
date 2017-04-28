@@ -40,3 +40,22 @@ docker-images.gv:
 
 index.html: README.md docker-images.png
 	pandoc -o $@ $<
+
+# Bioinformatics
+
+bioinformatics/homebrew-science/README.md:
+	git clone --depth=1 https://github.com/Homebrew/homebrew-science
+
+%/tagged.files: %/homebrew-science/README.md
+	grep -lF 'tag "$*"' $(<D)/*.rb >$@
+
+%/formulae.tsv: %/tagged.files
+	( printf "Formula\tLinux_bottle\n"; \
+		egrep -c 'sha256 ".*" => :x86_64_linux$$|bottle :unneeded$$' `<$<` \
+			| gsed 's~.*/~~; s/\.rb:0$$/\tFALSE/; s/\.rb:1$$/\tTRUE/') >$@
+
+%/formulae.Dockerfile: %/formulae.tsv
+	awk 'NR > 1 { print ($$2 == "TRUE" ? "" : "# ") "RUN brew install " $$1}' $< >$@
+
+%/Dockerfile: %/header.Dockerfile %/formulae.Dockerfile
+	cat $^ >$@
