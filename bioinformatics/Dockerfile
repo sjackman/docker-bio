@@ -1,10 +1,10 @@
 FROM linuxbrew/linuxbrew
 MAINTAINER Shaun Jackman <sjackman@gmail.com>
 
-ENV PERL5LIB /home/linuxbrew/perl5/lib/perl5
-RUN brew install cpanm
+# ENV PERL5LIB /home/linuxbrew/perl5/lib/perl5
+# RUN brew install cpanm
 # For edirect
-RUN cpanm HTML::Entities LWP::Simple LWP::Protocol::https
+# RUN cpanm HTML::Entities LWP::Simple LWP::Protocol::https
 
 RUN brew tap homebrew/science
 RUN brew install a5
@@ -83,7 +83,7 @@ RUN brew install discovar
 RUN brew install dsk
 RUN brew install dwgsim
 RUN brew install e-mem
-RUN brew install edirect
+# RUN brew install edirect
 # RUN brew install ensembl-tools
 RUN brew install exonerate
 RUN brew install express
