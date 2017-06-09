@@ -7,6 +7,10 @@ MAINTAINER Shaun Jackman <sjackman@gmail.com>
 # RUN cpanm HTML::Entities LWP::Simple LWP::Protocol::https
 
 RUN brew tap homebrew/science
+
+# for kat
+RUN brew install python matplotlib numpy scipy
+
 RUN brew install \
 a5 \
 abacas \
