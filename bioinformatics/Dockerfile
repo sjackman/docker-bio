@@ -8,8 +8,7 @@ MAINTAINER Shaun Jackman <sjackman@gmail.com>
 
 RUN brew tap homebrew/science
 
-# for kat
-RUN brew install python matplotlib numpy scipy
+RUN brew install perl python matplotlib numpy scipy
 
 RUN brew install \
 a5 \
