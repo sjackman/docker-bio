@@ -100,7 +100,6 @@ geneid \
 gingr \
 glimmerhmm \
 grabix \
-gubbins \
 hisat \
 hisat2 \
 hlaminer \
@@ -279,6 +278,7 @@ yaha
 # RUN brew install genometools
 # RUN brew install gmap-gsnap
 # RUN brew install graphlan
+# RUN brew install gubbins
 # RUN brew install harvest-tools
 # RUN brew install iva
 # RUN brew install kraken
