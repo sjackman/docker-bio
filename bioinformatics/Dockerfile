@@ -168,7 +168,6 @@ pandaseq \
 parsnp \
 pathd8 \
 pathvisio \
-pbsuite \
 pear \
 phipack \
 phlawd \
@@ -289,6 +288,7 @@ yaha
 # RUN brew install mothur
 # RUN brew install ncbi-c++-toolkit
 # RUN brew install ogdraw
+# RUN brew install pbsuite
 # RUN brew install plink2
 # RUN brew install populations
 # RUN brew install poretools
