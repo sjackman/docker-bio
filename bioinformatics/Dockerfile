@@ -9,7 +9,7 @@ MAINTAINER Shaun Jackman <sjackman@gmail.com>
 RUN brew tap homebrew/science
 
 RUN brew install perl python matplotlib numpy scipy
-
+RUN brew install libxml2
 RUN pip install biopython pysam python-igraph
 
 RUN brew install \
