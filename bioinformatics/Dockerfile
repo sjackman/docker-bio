@@ -10,6 +10,8 @@ RUN brew tap homebrew/science
 
 RUN brew install perl python matplotlib numpy scipy
 
+RUN pip install biopython pysam python-igraph
+
 RUN brew install \
 a5 \
 abacas \
