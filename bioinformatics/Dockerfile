@@ -216,7 +216,6 @@ shrimp \
 skewer \
 smalt \
 snap \
-snap-aligner \
 snoscan \
 snp-sites \
 snpeff \
@@ -299,6 +298,7 @@ yaha
 # RUN brew install reapr
 # RUN brew install simulate-pcr
 # RUN brew install smrtanalysis
+# RUN brew install snap-aligner
 # RUN brew install sortmerna
 # RUN brew install trans_proteomic_pipeline
 # RUN brew install ucsc-genome-browser
