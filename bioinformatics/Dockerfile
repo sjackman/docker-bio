@@ -139,7 +139,6 @@ mafft \
 mapsembler2 \
 maq \
 mash \
-masurca \
 mcl \
 megahit \
 mhap \
@@ -281,6 +280,7 @@ yaha
 # RUN brew install iva
 # RUN brew install kraken
 # RUN brew install maker
+# RUN brew install masurca
 # RUN brew install meme
 # RUN brew install metaphlan
 # RUN brew install mira
